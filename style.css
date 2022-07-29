@@ -1,0 +1,152 @@
+
+/* .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px red solid;
+}
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 1px green solid;
+}*/
+
+
+
+/* #container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+#main_image {
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+
+#overlay_image {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: red;
+}
+ */
+
+
+div{
+    /* border: 1px solid black; */
+    margin: -1px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+h1{
+    font-family: 'Righteous', Arial, Helvetica, sans-serif;
+    color: #97714b;
+}
+.container{
+    display: flex;
+}
+
+.container-left{
+    position: relative;
+    top:0;
+    left:0;
+}
+
+.background-img {
+    position: relative;
+    width:auto;
+    height:100vh;
+    top:0;
+    left:0;
+
+}
+
+.overlay{
+    position: absolute;
+    top:70px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #97714b;
+    opacity: 50%;
+
+}
+
+
+
+
+.dark-background{
+    
+
+    /* margin: -20% */
+}
+
+.logotext{
+    font-family: 'Righteous', Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    color: white;
+    position: absolute;
+    top:35px;
+    left: 30%;
+
+}
+
+
+.container-right{
+    padding: 0px 25px; 
+}
+
+
+.right-middle{
+    padding: 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 250px;
+    
+}
+
+.signUpForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.right-bottom{
+    margin: 15px 0px ;
+}
+
+
+input,label{
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 5px 25px;
+}
+
+input:focus{
+    background-color: #fffffff2;
+}
+
+button{
+    font-family: inherit;
+    font-size: 1.5rem;
+    background-color: #97714b;
+    color: white;
+    border-radius: 15px;
+
+}
+
+button:active{
+    background-color: burlywood;
+}

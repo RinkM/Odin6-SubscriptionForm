@@ -4,11 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+
     <title>Subscribe</title>
 </head>
 <body>
+  <div class = "container">
+    <div class = "container-left">
+      <img class = "background-img" src="images/nathan-dumlao-Im9kmRc1rms-unsplash.jpg" alt="A sad, lapless dog.">
+      <div class = "overlay"></div>
+        <h1 class = "logotext">DWL</h1>
+      
+    </div>
+
+    <div class = "container-right">
+      <div class = top-text>
+        <h1>Dogs Without Laps</h1>
+        <p>Every dog deserves a warm lap.</p>
+        <p>At Dogs Without Laps, we believe that all dogs need a safe 
+          place to rest their fluffy heads. Our specialists will match 
+          your lap with the dog who would find it the most comfortable. </p>
+        <p>Sign up and you can start donating your lap today!</p>
+      </div>
+      
+      <div class = "right-middle">
+
+        <form action="" method="post" class = signUpForm>
+
+          <div class = form-left>
+          <label for = "firstName">First Name:</label>
+          <br>
+          <input type = "text" id = "firstName" name = "first_name" required>
+          <br>
+          <label for = "email">Email Address:</label>
+          <br>
+          <input type = "email" id = "email" name = "email" required>
+<br>
+          <label for = "password">Password:</label>
+          <br>
+          <input type="password" id="password" name="password" required>
+
+        </div>
+          
+
+          <div class = form-right>
 
 
+          <label for = "lastName">Last Name:</label>
+          <br>
+          <input type = "text" id = "lastName" name = "last_name" required>
+          <br>
+          
+
+          <label for = "phone">Phone Number:</label>
+          <br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <br>
+
+          <label for = "passwordConfirm">Verify Password:</label>
+          <br>
+          <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+          <br>
+        </div>
+          
+          
+
+
+
+
+        </form>
+        <button>Sign Up!</button>
+      </div>
+      <div class = "right-bottom">
+        Already a member?  Log in here.
+      </div>
+    </div>
+  </div>
+    
 
 </body>
 </html>
