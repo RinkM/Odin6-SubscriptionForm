@@ -1,5 +1,5 @@
 # Odin6-SubscriptionForm
-Create a subscription form for a website.
+Create a subscription form for a website for user registration.
 
 
 ## Assignment is found here : 
