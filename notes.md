@@ -14,10 +14,6 @@ Sign up and you can start donating your lap today!
 
 
 
-Every 
-From Odin : 
-"You know you need something like this I your life to help you realize your deepest dreams. Sign up now to get started. 
-You know you want to."
 
 ## Todo
 left side image : picture and text
@@ -27,17 +23,6 @@ Right Side Form :
 
 
 
-
-first name
-Last name
-Email
-Phone number
-Password
-confirm Password 
-
-Create an account
-
-Already have an account? Log In
 
 
 
