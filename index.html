@@ -15,7 +15,7 @@
 <body>
   <div class = "container">
     <div class = "container-left">
-      <img class = "background-img" src="images/nathan-dumlao-Im9kmRc1rms-unsplash.jpg" alt="A sad, lapless dog.">
+      <!-- <img class = "background-img" src="images/nathan-dumlao-Im9kmRc1rms-unsplash.jpg" alt="A sad, lapless dog."> -->
       <div class = "overlay"></div>
         <h1 class = "logotext">DWL</h1>
       
@@ -35,56 +35,52 @@
 
         <form action="" method="post" class = signUpForm>
 
-          <div class = form-left>
-          <label for = "firstName">First Name:</label>
-          <br>
-          <input type = "text" id = "firstName" name = "first_name" required>
-          <br>
-          <label for = "email">Email Address:</label>
-          <br>
-          <input type = "email" id = "email" name = "email" required>
-<br>
-          <label for = "password">Password:</label>
-          <br>
-          <input type="password" id="password" name="password" required>
+          <div class = "form-input"><label for = "firstName">First Name:</label>
+            <input type = "text" id = "firstName" name = "first_name" required>
+            <div class = "error" id = "firstNameError">Error Message</div>
+          </div>
 
-        </div>
-          
+          <div class = "form-input"><label for = "lastName">Last Name:</label>
+            <input type = "text" id = "lastName" name = "last_name" required>
+            <div class = "error" id = "firstNameError">Error Message</div>
+          </div>
 
-          <div class = form-right>
+          <div class = "form-input"><label for = "email">Email Address:</label>
+            <input type = "email" id = "email" name = "email" required>
+            <div class = "error" id = "firstNameError">Error Message</div>
+          </div>
 
+          <div class = "form-input"><label for = "phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <div class = "error" id = "firstNameError">Error Message</div>
+          </div>
 
-          <label for = "lastName">Last Name:</label>
-          <br>
-          <input type = "text" id = "lastName" name = "last_name" required>
-          <br>
-          
+          <div class = "form-input"><label for = "password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class = "error" id = "firstNameError">Error Message</div>
+          </div>
 
-          <label for = "phone">Phone Number:</label>
-          <br>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-          <br>
+          <div class = "form-input"><label for = "passwordConfirm">Verify Password:</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            <div class = "error" id = "firstNameError">Error Message</div>
+          </div>
 
-          <label for = "passwordConfirm">Verify Password:</label>
-          <br>
-          <input type="password" id="passwordConfirm" name="passwordConfirm" required>
-          <br>
-        </div>
-          
-          
-
-
-
+          <button type = "submit">Sign Up!</button>
 
         </form>
-        <button>Sign Up!</button>
       </div>
+
       <div class = "right-bottom">
         Already a member?  Log in here.
       </div>
     </div>
   </div>
     
+  <footer> 
+    <a href = "https://github.com/RinkM">
+    <img class = "footer--img" src="images/fishAvatarSmall.png" alt="Fish Avatar">
+    </a>Copyright RinkM 2022
+  </footer>
 
 </body>
 </html>
