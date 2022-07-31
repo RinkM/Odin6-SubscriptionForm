@@ -87,7 +87,7 @@ input:focus{
 }
 
 input:focus:valid{
-    border-color: chartreuse
+    border-color: green
 }
 
 input:focus:invalid{
