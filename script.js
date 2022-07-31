@@ -16,20 +16,37 @@ const form = document.getElementById('signUpForm');
 let userInfo = {}
 
 const verify = () => {
+  let verified = [];
+  if (!userInfo.firstName){
+    firstNameError.style.display = "block";
+    verified.push(0)
+  }else{firstNameError.style.display = "none";}
+
+  if (userInfo.lastName){
+      lastNameError.style.display = "none";
+    } else {lastNameError.style.display = "block";
+      verified.push(0)}
+
 
   if (phoneReg.test(userInfo.phone)==false){
     phoneError.style.display = "block";
-    return false
-  }
+    verified.push(0)
+  }else{phoneError.style.display = "none";}
+
   if (userInfo.password !== userInfo.passwordConfirm){
     passwordConfirmError.style.display = "block";
-    return false
-  }
+    verified.push(0)
+  }else{passwordConfirmError.style.display = "none";}
+
   if (emailReg.test(userInfo.email)==false){
     emailError.style.display = "block";
-    return false
-  }
-  return true
+    verified.push(0)
+  }else{emailError.style.display = "none";}
+  
+  if (verified.includes(0))
+    {return false
+    }else {return true}
+    
 
 }
 
@@ -41,6 +58,7 @@ form.addEventListener('submit', function(e) {
   for (var input of entries) {
     (userInfo[input[0]] = input[1]);
   }
+  console.log(userInfo)
   if (verify()){alert("Thanks for your interest! We will contact you soon.")}
   });
 

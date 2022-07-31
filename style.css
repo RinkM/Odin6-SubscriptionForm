@@ -1,8 +1,20 @@
 @media only screen and (max-width: 687px){
-    .container-left, .photoCredit{
-        display:none;
+    .container{
+        flex-direction: column;
+    }
+    .container-left{
+        max-width: 450px;
+        height: 500px;
     }
 }
+
+@media only screen and (min-width: 687px){
+    .container-left{
+        min-width:450px;
+        height: 650px
+    }
+}
+
 /* div{
     border: 1px solid black;
     margin: -1px;
@@ -27,8 +39,7 @@ h1{
     background-size:cover;
     background-repeat: no-repeat;
     border-radius: 5px;
-    min-width:400px;
-    height: 650px
+    
 }
 
 .container-right{
@@ -86,13 +97,13 @@ input:focus{
     outline:none;
 }
 
-input:focus:valid{
+/* input:focus:valid{
     border-color: green
-}
-
+} */
+/* 
 input:focus:invalid{
     border-color: red;
-}
+} */
 
 button{
     font-family: inherit;

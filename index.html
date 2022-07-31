@@ -37,22 +37,23 @@
         <form action="" method="post" id = signUpForm>
 
           <div class = "form-input"><label for = "firstName">First Name:</label>
-            <input type = "text" id = "firstName" name = "first_name" required>
+            <input type = "text" id = "firstName" name = "firstName" >
             <div class = "error" id = "firstNameError">Please enter a first name</div>
           </div>
 
           <div class = "form-input"><label for = "lastName">Last Name:</label>
-            <input type = "text" id = "lastName" name = "last_name" required>
+            <input type = "text" id = "lastName" name = "lastName" >
             <div class = "error" id = "lastNameError">Please enter a last name</div>
           </div>
 
           <div class = "form-input"><label for = "email">Email Address:</label>
-            <input type = "email" id = "email" name = "email" required>
+            <input type = "email" id = "email" name = "email" >
             <div class = "error" id = "emailError">Please enter a valid email</div>
           </div>
+          <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
 
           <div class = "form-input"><label for = "phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="ex: 555-555-5555">
+            <input type="tel" id="phone" name="phone"   placeholder="ex: 555-555-5555">
             <div class = "error" id = "phoneError">Please use this format: XXX-XXX-XXXX</div>
           </div>
           
