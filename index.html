@@ -49,9 +49,9 @@
             <input type = "email" id = "email" name = "email" required>
             <div class = "error" id = "emailError">Please enter a valid email</div>
           </div>
-
+          
           <div class = "form-input"><label for = "phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"  placeholder="">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="ex: 555-555-5555">
             <div class = "error" id = "phoneError">Please use this format: XXX-XXX-XXXX</div>
           </div>
           
