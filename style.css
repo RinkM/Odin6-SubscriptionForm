@@ -1,54 +1,12 @@
-/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-
-
-
-/* .parent {
-  position: relative;
-  top: 0;
-  left: 0;
+@media only screen and (max-width: 687px){
+    .container-left{
+        display:none;
+    }
 }
-.image1 {
-  position: relative;
-  top: 0;   
-  left: 0;
-  border: 1px red solid;
-}
-.image2 {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  border: 1px green solid;
-}*/
-
-
-
-/* #container {
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-
-#main_image {
-  width: 100%;
-  height: 100%;
-  background: blue;
-}
-
-#overlay_image {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  background: red;
-}
- */
-
-
-div{
+/* div{
     border: 1px solid black;
     margin: -1px;
-}
+} */
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -60,79 +18,67 @@ h1{
 }
 .container{
     display: flex;
-}
+
+} 
 
 
 .container-left{
     background-image: url("images/nathan-dumlao-Im9kmRc1rms-unsplash.jpg");
-    background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    width:40vw;
-    position: relative;
-    top:0;
-    left:0;
+    border-radius: 5px;
+    min-width:400px;
+    height: 650px
 }
-
-
 
 .container-right{
     margin: 20px; 
-    width: 60vw;
+    width: 70%;
+    /* max-width: 750px; */
+    
 }
-
-
-.background-img {
-    position: relative;
-    width:auto;
-    width:40vh;
-    top:0;
-    left:0;
-
-}
-
 
 .overlay{
-    position: absolute;
+    position: relative;
     top:70px;
     width: 100%;
     height: 100px;
-    text-align: center;
+    text-align:center;
     background-color: #97714b;
-    opacity: 50%;
-
+    opacity: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .logotext{
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
-    font-size: 64px;
+    font-size: 70px;
     color: white;
-    position: absolute;
-    top:35px;
-    left: 30%;
-
 }
 
 .right-middle{
+    border-radius: 5px;
     padding: 15px 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 250px;
-    
 }
 
 .right-bottom{
     margin: 15px 0px ;
 }
 
+
+
 input{
     border-radius: 5px;
+    width:80%;
+
 }
 
 input,label, .error{
     font-family: inherit;
     font-size: 1rem;
-    margin: 5px 25px;
+    margin: 5px 12px;
 }
 
 input:focus{
@@ -155,7 +101,6 @@ button{
     color: white;
     border-radius: 15px;
     margin-top: 15px;
-
 }
 
 button:active{
@@ -170,8 +115,9 @@ form{
 .form-input{
     display: flex;
     flex-flow: column wrap;
-}
+    min-width: 40%;
 
+}
 
 .error{
 font-size: .7rem;
@@ -179,17 +125,11 @@ color: red;
 display: none;
 }
 
+.button-space{
+    display: flex;
+}
 
-
-
-
-
-
-
-
-
-footer {
-    
+footer {    
     display: flex;
     align-items: center;
     margin: 1rem;
@@ -200,5 +140,5 @@ footer {
 .footer--img{
     max-height: 2em ;
     border-radius: 50px;
-    margin-right: .5em;
+    margin-right: .5rem;
 }
