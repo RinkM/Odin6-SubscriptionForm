@@ -1,5 +1,5 @@
 @media only screen and (max-width: 687px){
-    .container-left{
+    .container-left, .photoCredit{
         display:none;
     }
 }
@@ -141,4 +141,10 @@ footer {
     max-height: 2em ;
     border-radius: 50px;
     margin-right: .5rem;
+}
+
+
+.photoCredit{
+    font-size: .7rem;
+    text-align: center;
 }
