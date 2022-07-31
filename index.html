@@ -33,42 +33,42 @@
       
       <div class = "right-middle">
 
-        <form action="" method="post" class = signUpForm>
+        <form action="" method="post" id = signUpForm>
 
           <div class = "form-input"><label for = "firstName">First Name:</label>
             <input type = "text" id = "firstName" name = "first_name" required>
-            <div class = "error" id = "firstNameError">Error Message</div>
+            <div class = "error" id = "firstNameError">Please enter a first name</div>
           </div>
 
           <div class = "form-input"><label for = "lastName">Last Name:</label>
             <input type = "text" id = "lastName" name = "last_name" required>
-            <div class = "error" id = "firstNameError">Error Message</div>
+            <div class = "error" id = "lastNameError">Please enter a last name</div>
           </div>
 
           <div class = "form-input"><label for = "email">Email Address:</label>
             <input type = "email" id = "email" name = "email" required>
-            <div class = "error" id = "firstNameError">Error Message</div>
+            <div class = "error" id = "emailError">Please enter a valid email</div>
           </div>
 
           <div class = "form-input"><label for = "phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-            <div class = "error" id = "firstNameError">Error Message</div>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="" required>
+            <div class = "error" id = "phoneError">Please use this format: XXX-XXX-XXXX</div>
           </div>
 
           <div class = "form-input"><label for = "password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <div class = "error" id = "firstNameError">Error Message</div>
+            <input type="password" id="password" name="password" required minlength="8">
+            <div class = "error" id = "passwordError">Please enter a valid password</div>
           </div>
 
           <div class = "form-input"><label for = "passwordConfirm">Verify Password:</label>
             <input type="password" id="passwordConfirm" name="passwordConfirm" required>
-            <div class = "error" id = "firstNameError">Error Message</div>
+            <div class = "error" id = "passwordConfirmError">Passwords don't match</div>
           </div>
 
-
+          
         </form>
         <div class = "button-space">
-          <button type = "submit">Sign Up!</button>
+          <button class = "submitBtn" type = "submit" form="signUpForm">Sign Up!</button>
         </div>
       </div>
 
@@ -85,4 +85,6 @@
   </footer>
 
 </body>
+<script src="script.js"></script>
+
 </html>
