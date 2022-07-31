@@ -1,31 +1,47 @@
 // ID signUpForm
 
+const firstNameError = document.getElementById("firstNameError")
+const lastNameError = document.getElementById("lastNameError")
+const emailError = document.getElementById("emailError")
+const phoneError = document.getElementById("phoneError")
+const passwordError = document.getElementById("passwordError")
+const passwordConfirmError = document.getElementById("passwordConfirm")
+
+const phoneReg = /[0-9]{3}-[0-9]{3}-[0-9]{4}/
+const emailReg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+
 
 const form = document.getElementById('signUpForm');
-form.addEventListener('submit',console.log("Submitted") )
 
-const formData = new FormData(form);
+let userInfo = {}
 
-const output = document.getElementById('output');
+const verify = () => {
+  if (userInfo.password !== userInfo.passwordConfirm){
+    passwordError.style.display = "block"
+  }
+  if (phoneReg.test(userInfo.phone)==false){
+    phoneError.style.display = "block"
+  }
+  if (emailReg.test(userInfo.email)==false){
+    emailError.style.display = "block"
+  }
+
+}
 
 
 
-
-document.querySelector('signUpForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    let x = document.querySelector('form.form').elements;
-    console.log("Username: ", x['userid'].value);
-    console.log("Password: ", x['pwd'].value);
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const entries = formData.entries();
+  for (var input of entries) {
+    (userInfo[input[0]] = input[1]);
+  }
+  verify()
   });
 
 
-const submitBtn = document.querySelector('.submitBtn');
-submitBtn.addEventListener('click', ()=>{buttonPress(0);});
 
 
-function submitData (){
-    for (const [key, value] of formData) {
-        output.textContent += `${key}: ${value}\n`;
-      }
 
-}
+
