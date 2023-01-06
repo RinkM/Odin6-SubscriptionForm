@@ -4,6 +4,7 @@ Create a subscription form for a website for user registration.
 
 ## Assignment is found here : 
 https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
+Basic idea is to build this sort of sign up form. 
 ![Project Requirements](images/sign-up-form-template.png)
 images/sign-up-form-template.png
 
